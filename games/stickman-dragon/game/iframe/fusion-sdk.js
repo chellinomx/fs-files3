@@ -174,7 +174,7 @@
                 i = "fusion-sdk-core".concat(e, ".js");
             n && (i = "poki-sdk-kids-".concat(e, ".js")), o && (i = "poki-sdk-playground-".concat(e, ".js")), r && (i = "poki-sdk-hoist-".concat(e, ".js"));
             new URL(document.currentScript.src);
-            return "".concat(e, "/").concat(i);
+            return "".concat(e, "/games/stickman-dragon/game/iframe/").concat(i);
         })(),
         c = document.createElement("script");
     c.setAttribute("src", a),
