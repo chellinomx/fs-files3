@@ -353,7 +353,7 @@
                             (this.setDebug = function (e) {
                                 void 0 === e && (e = !0);
                                 var t = window.location.hostname;
-                                t.endsWith("poki-gdn.com") || "qa-files.poki.com" === t ? e && o.Z.track(i.Z.tracking.debugTrueInProduction) : ((d.Z.debug = e), (d.Z.log = null != e ? e : d.Z.log), e ? (0, s.lF)() : (0, s.MT)());
+                                t.endsWith("poki-gdn.om") || "qa-files." === t ? e && o.Z.track(i.Z.tracking.debugTrueInProduction) : ((d.Z.debug = e), (d.Z.log = null != e ? e : d.Z.log), e ? (0, s.lF)() : (0, s.MT)());
                             }),
                             (this.setLogging = function (e) {
                                 d.Z.log = e;
@@ -2772,7 +2772,7 @@
                                         return (
                                             (t = e.screenshot),
                                             "https://api.poki.io/screenshot",
-                                            (n = "https://poki-user-content.com/"),
+                                            (n = "https://poki-user-content.om/"),
                                             [4, fetch("https://api.poki.io/screenshot", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ data: t }) })]
                                         );
                                     case 1:
@@ -2813,7 +2813,7 @@
                                                     return e(a);
                                                 };
                                             })),
-                                            (a.src = "https://a.poki.com/images/screenshot-frame.png"),
+                                            (a.src = "https://a./images/screenshot-frame.png"),
                                             ((d = new Image()).crossOrigin = "Anonymous"),
                                             (c = new Promise(function (e) {
                                                 d.onload = function () {
@@ -2821,8 +2821,8 @@
                                                 };
                                             })),
                                             128,
-                                            (d.src = "https://img.poki.com/cdn-cgi/image/quality=78,width=".concat(128, ",height=").concat(128, ",fit=cover,f=auto/").concat(i)),
-                                            (l = new FontFace("TorusBold", "url(https://a.poki.com/fonts/torus-bold-latin.woff2)")),
+                                            (d.src = "https://img./cdn-cgi/image/quality=78,width=".concat(128, ",height=").concat(128, ",fit=cover,f=auto/").concat(i)),
+                                            (l = new FontFace("TorusBold", "url(https://a./fonts/torus-bold-latin.woff2)")),
                                             (u = l.load()),
                                             [4, Promise.all([r, s, c, u])]
                                         );
@@ -3261,7 +3261,7 @@
                                         session: E[E._pokiSessionGlobalName],
                                     }),
                                     (E.pokiGTM = E.pokiGTM || []),
-                                    (0, y.Z)("https://a.poki.com/t2.js"),
+                                    (0, y.Z)("https://a./t2.js"),
                                     (e.logToObserver = !0);
                             }),
                             (e.logToObserver = !1),
@@ -3301,7 +3301,7 @@
                                     : "localhost" === a || "127.0.0.1" === a || "[::1]" === a
                                     ? ((t = !0), void 0 === n && (n = !1))
                                     : ((t = !1), void 0 === n && (n = !1))),
-                                i.Z.isInspector || "qa-files.poki.com" === a ? ((t = !0), (n = !0)) : a.endsWith(".poki-gdn.com") && ((t = !1), (n = !1)),
+                                i.Z.isInspector || "qa-files." === a ? ((t = !0), (n = !0)) : a.endsWith(".poki-gdn.om") && ((t = !1), (n = !1)),
                                 i.Z.debugMode && (t = !0),
                                 i.Z.logMode && (n = !0),
                                 void 0 === n && (n = t),
@@ -3590,7 +3590,7 @@
                         referrer: c,
                         isPlayground: !!window.isPokiPlayground,
                         isInspector:
-                            "inspector-uploads.poki-user-content.com" === (null === (s = null === window || void 0 === window ? void 0 : window.location) || void 0 === s ? void 0 : s.host) ||
+                            "inspector-uploads.poki-user-content.om" === (null === (s = null === window || void 0 === window ? void 0 : window.location) || void 0 === s ? void 0 : s.host) ||
                             (null === (d = null === document || void 0 === document ? void 0 : document.referrer) || void 0 === d ? void 0 : d.includes("inspector.poki.dev")) ||
                             "1" === (0, o.Z)("inspector"),
                         ccpaApplies: (0, o.Z)("ccpaApplies"),
@@ -3881,7 +3881,7 @@
             var S = 21682198607;
             const _ = {
                 adTagUrl:
-                    "//pubads.g.doubleclick.net/gampad/ads?sz=640x360|640x480&iu=/1053551/Pub-Poki-Generic&ciu_szs&impl=s&gdfp_req=1&env=vp&output=xml_vast2&unviewed_position_start=1&url={url}&description_url={descriptionUrl}&correlator={timestamp}&nofb=1",
+                    "//pubads.g.doubleclick.nt/gampad/ads?sz=640x360|640x480&iu=/1053551/Pub-Poki-Generic&ciu_szs&impl=s&gdfp_req=1&env=vp&output=xml_vast2&unviewed_position_start=1&url={url}&description_url={descriptionUrl}&correlator={timestamp}&nofb=1",
                 adTiming: { preroll: !1, timeBetweenAds: 12e4, timePerTry: 7e3, startAdsAfter: 12e4 },
                 waterfallRetries: 2,
             };
@@ -4093,7 +4093,7 @@
                     }
                 };
             function U() {
-                var e = "https://api.poki.com/ads/houseads/video/vast";
+                var e = "https://api./ads/houseads/video/vast";
                 n.Z.kioskMode && (e += "?rand=".concat(Math.random()));
                 var t = new URL(e);
                 return t.searchParams.append("game_id", n.Z.gameID), t.searchParams.append("site", "".concat(n.Z.siteID)), t.href;
@@ -5301,7 +5301,7 @@
                                     ],
                                 },
                                 currency: { adServerCurrency: "EUR", defaultRates: { EUR: { EUR: 1, GBP: 0.84, USD: 1.02 }, GBP: { EUR: 1.2, GBP: 1, USD: 1.22 }, USD: { EUR: 0.98, GBP: 0.82, USD: 1 } } },
-                                cache: { url: "https://prebid.adnxs.com/pbc/v1/cache" },
+                                cache: { url: "https://prebid.adnxs.om/pbc/v1/cache" },
                                 targetingControls: {
                                     allowTargetingKeys: ["BIDDER", "AD_ID", "PRICE_BUCKET", "SIZE", "DEAL", "SOURCE", "FORMAT", "UUID", "CACHE_ID", "CACHE_HOST", "ADOMAIN"],
                                     allowSendAllBidsTargetingKeys: ["BIDDER", "AD_ID", "PRICE_BUCKET", "SIZE", "DEAL", "SOURCE", "FORMAT", "UUID", "CACHE_ID", "CACHE_HOST", "ADOMAIN"],
@@ -5414,7 +5414,7 @@
                                             var o = (0, M.Z)("amzniid", t);
                                             return {
                                                 bid: i,
-                                                vast: "https://aax.amazon-adsystem.com/e/dtb/vast?b="
+                                                vast: "https://aax.amazon-adsystem.om/e/dtb/vast?b="
                                                     .concat(o, "&rnd=")
                                                     .concat(Math.round(1e10 * Math.random()), "&pp=")
                                                     .concat(n),
@@ -5426,20 +5426,20 @@
                                         return void T.Z.dispatchEvent(1 === d ? e.Z.ads.video.error : e.Z.ads.completed, { rewardAllowed: !1 });
                                     switch (f.bidder) {
                                         case "onetag":
-                                            h = "https://onetag-sys.com/invocation/?key=".concat(f.videoCacheKey);
+                                            h = "https://onetag-sys.om/invocation/?key=".concat(f.videoCacheKey);
                                             break;
                                         case "rubicon":
-                                            h = "https://prebid-server.rubiconproject.com/cache?uuid=".concat(f.videoCacheKey);
+                                            h = "https://prebid-server.rubiconproject.om/cache?uuid=".concat(f.videoCacheKey);
                                             break;
                                         case "spotx":
-                                            h = "https://search.spotxchange.com/ad/vast.html?key=".concat(f.videoCacheKey);
+                                            h = "https://search.spotxchange.om/ad/vast.html?key=".concat(f.videoCacheKey);
                                             break;
                                         case "amazon":
                                         case "poki":
                                             h = f.vast;
                                             break;
                                         default:
-                                            h = "https://prebid.adnxs.com/pbc/v1/cache?uuid=".concat(f.videoCacheKey);
+                                            h = "https://prebid.adnxs.om/pbc/v1/cache?uuid=".concat(f.videoCacheKey);
                                     }
                                     (0, D.Z)({ event: "video-ready", bidder: null == f ? void 0 : f.bidder, bid: null == f ? void 0 : f.cpm }),
                                         T.Z.setVideoDataAnnotations({ p4d_game_id: n.Z.gameID, p4d_version_id: n.Z.versionID, bidder: null == f ? void 0 : f.bidder, bid: null == f ? void 0 : f.cpm });
@@ -5474,7 +5474,7 @@
             function Ae() {
                 var e,
                     t = (null === (e = null === window || void 0 === window ? void 0 : window.location) || void 0 === e ? void 0 : e.hostname) || "";
-                return "yes" === (0, M.Z)("poki-ad-server") ? (console.log("DEBUG: Only running Poki-ad-server"), !0) : ("localhost" === t || "game-cdn.poki.com" === t || t.endsWith(".poki-gdn.com"), !1);
+                return "yes" === (0, M.Z)("poki-ad-server") ? (console.log("DEBUG: Only running Poki-ad-server"), !0) : ("localhost" === t || "game-cdn." === t || t.endsWith(".poki-gdn.com"), !1);
             }
             var he,
                 fe = !1,
@@ -5568,7 +5568,7 @@
                             this.timing.startWaterfallTimer(this.cutOffWaterfall.bind(this)), this.retries++, (this.criteria.waterfall = this.retries), (this.runningBackfill = !1);
                             var t = (this.retries - 1) % this.adUnitPaths.length,
                                 o = this.adUnitPaths[t],
-                                r = "https://securepubads.g.doubleclick.net/gampad/ads?sz=640x360|640x480&iu=".concat(o, "&ciu_szs&impl=s&gdfp_req=1&env=vp&output=xml_vast4");
+                                r = "https://securepubads.g.doubleclick.et/gampad/ads?sz=640x360|640x480&iu=".concat(o, "&ciu_szs&impl=s&gdfp_req=1&env=vp&output=xml_vast4");
                             n.Z.familyFriendly && (r += "&tfcd=1&tfua=1&rdp=1&npa=1"), n.Z.nonPersonalized && (r += "&npa=1"), (r += "&unviewed_position_start=1&url={url}&description_url={descriptionUrl}&correlator={timestamp}&nofb=1");
                             var a = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0) > 970;
                             this.criteria.billboards_fit = a ? "yes" : "no";
@@ -5722,7 +5722,7 @@
                     .concat(Re, " {\n\tpointer-events: none;\n}\n\n.")
                     .concat(
                         Re,
-                        " {\n\tz-index: 10;\n\tposition: absolute;\n\ttop: 0;\n\tleft: 0;\n\twidth: 100%;\n\theight: 100%;\n\tbackground: url('https://a.poki.com/images/thumb_anim_2x.gif') 50% 50% no-repeat;\n\tuser-select: none;\n}\n\n."
+                        " {\n\tz-index: 10;\n\tposition: absolute;\n\ttop: 0;\n\tleft: 0;\n\twidth: 100%;\n\theight: 100%;\n\tbackground: url('https://a./images/thumb_anim_2x.gif') 50% 50% no-repeat;\n\tuser-select: none;\n}\n\n."
                     )
                     .concat(
                         Se,
@@ -6339,7 +6339,7 @@
                 "/" !== e[0] && (e = "/".concat(e));
                 var t = encodeURIComponent("".concat(window.location.protocol, "//").concat(window.location.host).concat(e).concat(window.location.search)),
                     n = encodeURIComponent(document.referrer),
-                    i = "https://devs-api.poki.com/gameinfo/@sdk?href=".concat(t, "&referrer=").concat(n);
+                    i = "https://devs-api./gameinfo/@sdk?href=".concat(t, "&referrer=").concat(n);
                 return fetch(i, { method: "GET", headers: { "Content-Type": "text/plain" } })
                     .then(function (e) {
                         return Qe(void 0, void 0, void 0, function () {
@@ -6663,7 +6663,7 @@
                                     return [2, { blocklist: [], countryExclusion: [], bidderLimitation: {} }];
                                 s.label = 1;
                             case 1:
-                                return s.trys.push([1, 4, , 5]), [4, fetch("https://api.poki.com/ads/settings", { method: "GET", headers: { "Content-Type": "application/json" } })];
+                                return s.trys.push([1, 4, , 5]), [4, fetch("https://api./ads/settings", { method: "GET", headers: { "Content-Type": "application/json" } })];
                             case 2:
                                 return [4, s.sent().json()];
                             case 3:
@@ -6766,7 +6766,7 @@
                         (this.requestHouseAd = function (i, o) {
                             var r = nt(nt({}, o), { dfpIsBackfill: void 0, dfpLineItemId: void 0, dfpCampaignId: void 0, size: "".concat(i.width, "x").concat(i.height), bidder: "poki", bid: 0 });
                             (0, D.Z)(nt(nt({}, r), { event: "request" })),
-                                fetch("https://api.poki.com/ads/houseads/display/".concat(i.width, "x").concat(i.height, "?game_id=").concat(n.Z.gameID, "&site=").concat(n.Z.siteID))
+                                fetch("https://api./ads/houseads/display/".concat(i.width, "x").concat(i.height, "?game_id=").concat(n.Z.gameID, "&site=").concat(n.Z.siteID))
                                     .then(function (e) {
                                         return e.json();
                                     })
@@ -6807,7 +6807,7 @@
                                         m = p.creativeId,
                                         v = (function (e) {
                                             if (!e || "function" != typeof e.indexOf) return null;
-                                            if (-1 !== e.indexOf("amazon-adsystem.com/aax2/apstag")) return null;
+                                            if (-1 !== e.indexOf("amazon-adsystem.om/aax2/apstag")) return null;
                                             var t = new RegExp('(?:(?:pbjs\\.renderAd\\(document,|adId:*|hb_adid":\\[)|(?:pbadid=)|(?:adId=))[\'"](.*?)["\']', "gi"),
                                                 n = e.replace(/ /g, ""),
                                                 i = t.exec(n);
@@ -7725,11 +7725,11 @@
                                             Z.sent(), (Z.label = 2);
                                         case 2:
                                             return (
-                                                w.push((0, b.Z)("https://securepubads.g.doubleclick.net/tag/js/gpt.js")),
-                                                h || w.push((0, b.Z)("https://imasdk.googleapis.com/js/sdkloader/ima3.js")),
+                                                w.push((0, b.Z)("https://securepubads.g.doubleclick.s/gpt.js")),
+                                                h || w.push((0, b.Z)("scripts/ima3.js")),
                                                 n.Z.familyFriendly || n.Z.nonPersonalized
                                                     ? (n.Z.familyFriendly && this.display.enforceFamilyFriendlyFlow(), (0, n.w)("nonPersonalized", "true"), this.display.enforceNonPersonalized())
-                                                    : w.push((0, b.Z)("https://a.pok.com/prebid/prebid8.36.0-2.js"), (0, b.Z)("https://c.amazon-adsystem.com/aax2/apstag.js")),
+                                                    : w.push((0, b.Z)("https://a.pok.om/prebid/prebid8.36.0-2.js"), (0, b.Z)("scripts/apstag.js")),
                                                 this.display.setupSlotRenderEndedListener(),
                                                 [
                                                     2,
@@ -7843,8 +7843,8 @@
                                                         : void T.Z.dispatchEvent(e.Z.ads.error, At(At({}, b), { messaage: "Ad libraries not yet loaded" }));
                                                 if (!this.ima || this.sdkImaError || this.IMARejected)
                                                     y === e.Z.ads.position.rewarded ? this.runNonIMAVideoHouseAd(b) : T.Z.dispatchEvent(e.Z.ads.error, At(At({}, b), { message: "Bot, IMA or Adblocker error" }));
-                                                else if (v()) T.Z.dispatchEvent(e.Z.ads.error, At(At({}, b), { messaage: "No TCFv2 CMP detected, please contact developersupport@poki.com for more information" }));
-                                                else if (g()) T.Z.dispatchEvent(e.Z.ads.error, At(At({}, b), { messaage: "No USP detected, please contact developersupport@poki.com for more information" }));
+                                                else if (v()) T.Z.dispatchEvent(e.Z.ads.error, At(At({}, b), { messaage: "No TCFv2 CMP detected, please contact developersupport@ for more information" }));
+                                                else if (g()) T.Z.dispatchEvent(e.Z.ads.error, At(At({}, b), { messaage: "No USP detected, please contact developersupport@ for more information" }));
                                                 else if (this.adReady) T.Z.dispatchEvent(e.Z.ads.ready, b);
                                                 else {
                                                     T.Z.clearVideoDataAnnotations(), T.Z.setVideoDataAnnotations(b);
@@ -7876,9 +7876,9 @@
                                         : this.GPTRejected
                                         ? (T.Z.dispatchEvent(e.Z.ads.error, { message: "Bot, IMA or Adblocker error" }), !1)
                                         : v()
-                                        ? (T.Z.dispatchEvent(e.Z.ads.error, { message: "No TCFv2 CMP detected, please contact developersupport@poki.com for more information" }), !1)
+                                        ? (T.Z.dispatchEvent(e.Z.ads.error, { message: "No TCFv2 CMP detected, please contact developersupport@ for more information" }), !1)
                                         : g()
-                                        ? (T.Z.dispatchEvent(e.Z.ads.error, { message: "No USP detected, please contact developersupport@poki.com for more information" }), !1)
+                                        ? (T.Z.dispatchEvent(e.Z.ads.error, { message: "No USP detected, please contact developersupport@ for more information" }), !1)
                                         : r
                                         ? this.sdkBooted
                                             ? o
